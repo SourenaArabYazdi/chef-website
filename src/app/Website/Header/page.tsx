@@ -5,17 +5,20 @@ import {
     Sheet,
     SheetContent,
     SheetDescription,
+    SheetFooter,
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-  } from "@/components/ui/sheet"
+  } from "@/components/ui/sheet";
+  import { IoIosMore } from "react-icons/io";
+import { Button } from "@/components/ui/button";
 
 export default function HeaderPage(){
 
 
     return(
-        <div className=" h-[144px] bg-[#374151]">
-            <div className="w-[225.625px] h-[64px] border flex flex-row items-center justify-beetwen ">
+        <div className=" h-[144px] bg-[#374151] flex  items-center justify-between">
+            <div className="w-[225.625px] h-[64px]  flex flex-row items-center justify-beetwen ">
                  <span>
                      <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
                  </span>
@@ -27,20 +30,70 @@ export default function HeaderPage(){
                  </span>
             </div>
 
-            <div>
+            <div className="flex items-center justify-between">
                   
-                     <span className="w-[171px] h-[58px] flex flex-row border items-center justify-between text-[#FFFFFF] text-xl "> 
+                     <span className="w-[171px] h-[58px] flex flex-row  items-center justify-between text-[#FFFFFF] text-xl mr-8 "> 
                         <FaPhoneAlt className="w-auto h-[30px] text-[#DF6853] mb-6 " />
-                          <span className="ml-2"> +1(909) 235-9814 </span>
+                          <span className="ml-2 "> +1(909) 235-9814 </span>
                      </span>
 
                 
                   <div className="">
                       
-                        <Sheet>
-                             <SheetTrigger> 
-                                 
-                             </SheetTrigger>
+                        <Sheet >
+                             <SheetTrigger className="w-[40px] h-[34px]"> <IoIosMore  className="text-white mr-2 cursor-pointer" size={34} /> </SheetTrigger>
+
+                             <SheetContent className="bg-[#374151] space-y-2  ">
+                                 <SheetHeader className="flex flex-row items-center mb-4 ">
+                                     <SheetTitle className="flex space-x-4 items-center ">
+                                     <span>
+                                             <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className=""/>
+                                         </span>
+                                         <span className="text-[#FFFFFF] ml-3 text-[24px] ">
+                                             <Link href={'/Website'}> 
+                                                Chef's 
+                                                 Kitchen
+                                               </Link>
+                                         </span>
+                                     </SheetTitle>
+                                 </SheetHeader>
+
+                                 <div className="text-white ml-3 text-xl">
+                                   <Link href={'#'}>
+                                     Home
+                                    </Link>
+                                 </div>
+
+                                 <div className="text-white ml-3 text-xl">
+                                   <Link href={'#'}>
+                                     About Us
+                                    </Link>
+                                 </div>
+
+                                 <div className="text-white ml-3 text-xl">
+                                   <Link href={'#'}>
+                                     Recepie
+                                    </Link>
+                                 </div>
+
+                                  <div className="text-white ml-3 text-xl">
+                                   <Link href={'#'}>
+                                     Gallery
+                                    </Link>
+                                 </div>
+
+
+                                  <div className="flex flex-col  space-y-4 p-2 ">
+                                      <Button className="bg-[#374151] border border-[#DF6853] text-[#DF6853]">
+                                         Sign In
+                                      </Button>
+
+                                      <Button className="bg-[#DF6853] text-white">
+                                         Sign Up
+                                      </Button>
+
+                                  </div>
+                             </SheetContent>
                         </Sheet>
 
 
