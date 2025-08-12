@@ -1,12 +1,12 @@
-
+import BodyTopComponent from "./components/BodyTop"
 
 
 export default function BodyPage(){
 
 
     return (
-        <div>
-            body
+        <div className="min-h-screen ">
+             <BodyTopComponent />
         </div>
     )
 }
