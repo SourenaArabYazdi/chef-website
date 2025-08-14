@@ -1,14 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-
-type ItemsProps = {
-    id : number
-    title : string , 
-    desc : string , 
-    image : string
-}
-
+// ... Items array is the same ...
 export const Items  : ItemsProps[]= [
      { 
         id : 1 , 
@@ -46,21 +39,34 @@ export const Items  : ItemsProps[]= [
 ]
 
 
-export const ItemComponent = () =>{
+export const ItemComponent = () => {
+    return (
+        <div className="min-h-[485px] bg-[#000000]  flex flex-col justify-center items-center gap-12 p-2 ">
+            {Items.map((item) => (
+                <div key={item.id} className="flex flex-col  items-center text-center p-15">
+                    
+                  
+                 
+                        <Image
+                            src={item.image}
+                            width={260} 
+                            height={260} 
+                           
+                            className="w-full h-full   object-cover " 
+                            alt={item.title}
+                        />
+                    
 
-
-     return(
-        <div className="min-h-[485px] bg-[#000000] flex flex-col justify-center items-center">
-            {Items.map((item ) => (
-                <div key={item.id} className="flex items-center justify-center flex-col">
-                        <Image src = {item.image} width={75} height={35} className="border w-[200px] inline-block" alt="IMAGE"/>
-                        <h1>{item.title}</h1>
-                        <p className="text-gray-300"> {item.desc}</p>
-                        <h2 className="text-[#DF6853]"><Link href={'#'}>Learn More</Link></h2>
+                    {/* Text Content */}
+                    <div className="flex items-center justify-center flex-col">
+                      <h1 className="text-white text-xl font-bold mb-2">{item.title}</h1>
+                      <p className="text-gray-300 w-3/4 mb-4">{item.desc}</p>
+                      <h2 className="text-[#DF6853] hover:underline">
+                          <Link href={'#'}>Learn More</Link>
+                      </h2>
+                    </div>
                 </div>
             ))}
-              
         </div>
-
-     )
+    )
 }
