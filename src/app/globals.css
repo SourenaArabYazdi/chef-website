@@ -41,6 +41,24 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+    }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
 
 :root {
@@ -120,4 +138,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.chef-image-clip {
+  clip-path: path('M150 0 C70 0 0 70 0 150 C0 230 70 300 150 300 C230 300 300 230 300 150 C300 70 230 0 150 0 Z M150 250 C120 250 100 220 100 200 L200 200 C200 220 180 250 150 250 Z');
+}
+
+
+.chef-card::after {
+    content: '';
+  
 }
