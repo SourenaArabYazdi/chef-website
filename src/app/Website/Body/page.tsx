@@ -2,7 +2,8 @@ import BodyTopComponent from "./components/BodyTop"
 import BodyMidComponent from "./components/BodyMId"
 import BodyMid2Component from "./components2/BodyMid2"
 import BodyMid3Component from "./components2/BodyMid3"
-import BodyFooter from "./components/BodyBottom"
+import  BodyBottom from "./components/BodyBottom"
+import BodyFooter from "./components/BodyFooter"
 
 export default function BodyPage(){
 
@@ -13,6 +14,7 @@ export default function BodyPage(){
              <BodyMidComponent />
              <BodyMid2Component />
              <BodyMid3Component />
+             <BodyBottom />
              <BodyFooter />
         </div>
     )
