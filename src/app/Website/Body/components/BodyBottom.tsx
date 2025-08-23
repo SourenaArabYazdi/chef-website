@@ -19,7 +19,17 @@ export default function BodyBottom(){
         
 
            
-               <Image src={"/Gallery/foodone.jpg"} width={436} height={844} alt="foodone" className="rounded-2xl mt-14" />
+               <div className="relative w-[436px] overflow-hidden group">
+                 <Image src={"/Gallery/foodone.jpg"} width={436} height={844} alt="foodone" className="rounded-2xl mt-14 object-cover w-full h-full" />
+                 <div className="absolute inset-0 bg-black  opacity-50 flex flex-col justify-end p-6 bg-gradient-to-t from-black/80 
+                  to-transparent  transform  translate-y-full group-hover:translate-y-0 transition-transform ease-in-out duration-600">
+
+                 </div>
+               </div>
+
+
+
+
                <Image src={"/Gallery/foodtwo.jpg"} width={436} height={844} alt="foodone" className="rounded-2xl mt-8" />
                <Image src={"/Gallery/foodthree.jpg"} width={436} height={844} alt="foodone" className="rounded-2xl mt-8" />
                <Image src={"/Gallery/foodfour.jpg"} width={436} height={844} alt="foodone" className="rounded-2xl mt-8" />
@@ -32,7 +42,7 @@ export default function BodyBottom(){
 
                    <div className="flex items-centerrounded-full bg-[#3B3B3B] p-2 flex-row justify-center items-center mr-32 rounded-full space-x-2">
                       <Input placeholder="@ enter your email address" className="bg-[#3B3B3B] p-2 focus:ring-0 focus:outline-none border-none w-[80%] rounded-full h-[60px] "  />
-                      <Button className="rounded-full  ">
+                      <Button className="rounded-full  cursor-pointer ">
                         <FaArrowRight />
                       </Button>
                    </div>

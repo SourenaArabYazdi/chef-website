@@ -1,7 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "swiper/css";
 
 @custom-variant dark (&:is(.dark *));
+
+.slider-container {
+  overflow-x: hidden;
+
+  padding: 0 10px; 
+}
 
 @theme inline {
   --color-background: var(--background);

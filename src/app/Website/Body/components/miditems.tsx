@@ -2,6 +2,14 @@ import Image from "next/image"
 import Link from "next/link"
 
 // ... Items array is the same ...
+
+type ItemsProps = {
+    id : number , 
+    title : string , 
+    desc : string , 
+    image : string
+}
+
 export const Items  : ItemsProps[]= [
      { 
         id : 1 , 

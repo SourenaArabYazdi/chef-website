@@ -8,7 +8,7 @@ export default function BodyMid2Component(){
 
 
     return(
-        <div className="h-[1322.41px] bg-[#000000] text-[#FFFFFF] mt-104 felx items-center justify-center">
+        <div className="h-[1122.41px] bg-[#000000] text-[#FFFFFF] mt-104 felx items-center justify-center">
 
             <Image src={'/cook.png'}  width={816} height={916} alt="Cook"/>
 
