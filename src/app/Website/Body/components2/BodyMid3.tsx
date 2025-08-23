@@ -1,12 +1,7 @@
-import { Marquee } from "@/components/magicui/marquee";
+"use client"
 
 
-import { Swiper , SwiperSlide } from "swiper/react";
-import {Navigation , Pagination} from "swiper/modules"
-
-import "swiper/css"
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { ChefSlide } from "../SwiperSlider/Chef'sSlider"
 
 
 export default function BodyMid3Component(){
@@ -20,8 +15,8 @@ export default function BodyMid3Component(){
                  <h1 className="text-[#DF6853] text-3xl ">EXPERCT CHEFS</h1>
                  <h2 className="text-[30px] font-bold">Let's meet the expert</h2>
 
-               
-                 
+             
+                 < ChefSlide />
               
              
             </div>
