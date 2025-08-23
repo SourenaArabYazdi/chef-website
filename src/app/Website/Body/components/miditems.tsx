@@ -49,7 +49,7 @@ export const Items  : ItemsProps[]= [
 
 export const ItemComponent = () => {
     return (
-        <div className="min-h-[485px]  bg-[#000000]  flex flex-col justify-center items-center gap-12 p-2 ">
+        <div className="min-h-[485px]  bg-[#000000]  flex flex-col justify-center items-center gap-12 p-2 sm:grid sm:grid-cols-2 sm:grid-rows-2 ">
             {Items.map((item) => (
                 <div key={item.id} className="flex flex-col  items-center text-center p-15">
                     

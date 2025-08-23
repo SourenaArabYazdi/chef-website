@@ -14,7 +14,7 @@ export default function BodyFooter(){
 
     return(
 
-        <div className="h-[1049px] bg-[#000000] text-[#FFFFFF]">
+        <div className="h-[1049px] bg-[#000000] text-[#FFFFFF] ">
 
               <div className="flex flex-row items-center space-x-4 ml-2 mt-20">
 
