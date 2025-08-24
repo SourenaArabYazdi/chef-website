@@ -23,8 +23,8 @@ export default function HeaderPage(){
                      <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
                  </span>
                  <span className="text-[#FFFFFF] ml-3 text-[24px] ">
-                     <Link href={'/Website'}> 
-                        Chef's <br />
+                     <Link href={'/Website'} className=""> 
+                        Chef's <br className="md:hidden" />
                          Kitchen
                        </Link>
                  </span>

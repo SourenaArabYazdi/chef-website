@@ -15,9 +15,9 @@ export default function BodyTopComponent(){
              </div>
 
 
-             <div className="ml-3 space-y-5 ">
+             <div className="ml-3 space-y-5 md:flex md:flex-row md:justify-center md:space-x-3  ">
                   <Button className="bg-[#DF6853] text-white min-h-[70px] rounded-full text-[20px] p-7">Lets Cook</Button> <br />
-                  <Button className="bg-[#374151] border border-[#DF6853] text-[#DF6853] w-full min-h-[70px] text-[20px] rounded-full mt-2"> Explore now </Button>
+                  <Button className="bg-[#374151] border border-[#DF6853] text-[#DF6853] w-full md:w-[30%] min-h-[70px] text-[20px] rounded-full mt-2 md:mt-0"> Explore now </Button>
              </div>
 
 

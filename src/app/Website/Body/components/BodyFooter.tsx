@@ -1,99 +1,169 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { FaFacebookF } from "react-icons/fa6";
-import { FaInstagram, FaTwitch } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
+export default function BodyFooter() {
+    return (
+        <footer className="bg-[#000000] text-[#FFFFFF] py-16 px-4">
+            <div className="max-w-7xl mx-auto">
+               
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
+                    <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4 mb-8 md:mb-0">
+                        <Image 
+                            src={"/Images/logo/Logo.svg"} 
+                            height={56} 
+                            width={56} 
+                            alt="Chef's Kitchen logo" 
+                        />
+                        <h1 className="text-2xl font-bold">Chef's Kitchen</h1>
+                    </div>
+                    
+                    <div className="flex flex-col space-y-4">
+                        <p className="text-gray-400 text-sm max-w-xs">
+                            Open an account in minutes, get full financial control for much longer.
+                        </p>
+                        
+                        <div className="flex space-x-4">
+                            <Button 
+                                className="bg-[#FFFFFF] text-[#000000] rounded-full hover:bg-[#DF6853] hover:text-[#FFFFFF] transition-colors duration-200"
+                                aria-label="Follow us on Facebook"
+                            >
+                                <FaFacebookF />
+                            </Button>
+                            
+                            <Button 
+                                className="bg-[#FFFFFF] text-[#000000] rounded-full hover:bg-[#DF6853] hover:text-[#FFFFFF] transition-colors duration-200"
+                                aria-label="Follow us on Instagram"
+                            >
+                                <FaInstagram />
+                            </Button>
+                            
+                            <Button 
+                                className="bg-[#FFFFFF] text-[#000000] rounded-full hover:bg-[#DF6853] hover:text-[#FFFFFF] transition-colors duration-200"
+                                aria-label="Follow us on Twitter"
+                            >
+                                <FaXTwitter />
+                            </Button>
+                        </div>
+                    </div>
+                </div>
 
+                
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
+                    <div className="space-y-4">
+                        <h2 className="font-bold text-xl">Company</h2>
+                        <nav className="space-y-3">
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                About
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Careers
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Mobile
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Blog
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                How we work?
+                            </Link>
+                        </nav>
+                    </div>
 
-export default function BodyFooter(){
+                    <div className="space-y-4">
+                        <h2 className="font-bold text-xl">Information</h2>
+                        <nav className="space-y-3">
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Help/FAQ
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Press
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Affiliates
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Hotel owners
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Partners
+                            </Link>
+                        </nav>
+                    </div>
 
+                    <div className="space-y-4">
+                        <h2 className="font-bold text-xl">More</h2>
+                        <nav className="space-y-3">
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Home
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                About Us
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Recipe
+                            </Link>
+                            <Link 
+                                href="#" 
+                                className="block text-gray-400 hover:text-[#DF6853] transition-colors duration-200"
+                            >
+                                Gallery
+                            </Link>
+                        </nav>
+                    </div>
+                </div>
 
+                {/* Divider */}
+                <div className="border-t border-gray-600 mb-8" />
 
-
-    return(
-
-        <div className="h-[1049px] bg-[#000000] text-[#FFFFFF] ">
-
-              <div className="flex flex-row items-center space-x-4 ml-2 mt-20">
-
-                  <Image src={"/Images/logo/Logo.svg"} height={56} width={56} alt="logo" />
-                  <h1 className="text-2xl font-bold">Chef's Kitchen</h1> 
-                 
-              </div>
-              <p className="text-gray-400 text-xs mt-3 p-2 ml-1">Open an account in minutes, <br /> get
-              full financial control for much longer.</p>
-
-
-              <div className="space-x-5  mt-10 p-2 ml-1 ">
-                  <Button className="bg-[#FFFFFF] text-[#000000] rounded-full hover:bg-[#DF6853] hover:text-[#FFFFFF] cursor-pointer " >
-                    <FaFacebookF className="" />
-
-                  </Button>
-
-                   <Button className="bg-[#FFFFFF] text-[#000000] rounded-full  hover:bg-[#DF6853] hover:text-[#FFFFFF] cursor-pointer ">
-
-                    <FaInstagram />
-
-                  </Button>
-
-                  <Button className="bg-[#FFFFFF] text-[#000000] rounded-full  hover:bg-[#DF6853] hover:text-[#FFFFFF] cursor-pointer ">
-                     
-                     <FaXTwitter />
-
-                  </Button>        
-              </div>
-
-
-              <div className="grid grid-rows-2 grid-cols-2  mt-4">
-                  
-
-                   <div className="grid grid-cols-1 grid-rows-5 space-y-5 p-5 " >
-                    <h1 className="font-bold text-xl  ">Company</h1>
-
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100 ">About</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">Careers</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">Mobile</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">Blog</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">How we work ?</Link>
-
-                   </div>
-
-                   <div className="grid grid-cols-1 grid-rows-5 space-y-5 p-5 " >
-                    <h1 className="font-bold text-xl  ">Information</h1>
-
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100 ">Help/FAQ</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">Press</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">Affiliates</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">Hotel owners</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">Partners</Link>
-
-                   </div>
-
-                   <div className="grid grid-cols-1 grid-rows-5 space-y-5 p-5 " >
-                    <h1 className="font-bold text-xl  ">More</h1>
-
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100 ">Home</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">About Us</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">Recepie</Link>
-                       <Link href={"#"} className="text-gray-400 hover:text-[#DF6853] transition-colors duration-100">Gallery</Link>
-                       
-
-                   </div>
-              </div>
-
-
-                <div className="border-t border-gray-600 w-[95%] flex ml-3 mt-10" />
-
-
-                <p className="text-xs text-gray-400 p-5 mt-2">
-                @2025 - Chef's kitchen. Distributed By <br /> ThemeWagon and Developed by <br /> GetNextjsTemplates & SourenaArabYazdi
+                {/* Copyright */}
+                <p className="text-xs text-gray-400 text-center">
+                    ©2025 - Chef's kitchen. Distributed By ThemeWagon and Developed by GetNextjsTemplates & SourenaArabYazdi
                 </p>
-
-               
-               
-            
-        </div>
-    )
+            </div>
+        </footer>
+    );
 }
