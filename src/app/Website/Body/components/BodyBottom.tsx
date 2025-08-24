@@ -9,7 +9,7 @@ export default function BodyBottom() {
     return (
         <div className="bg-[#000000] text-[#FFFFFF] flex flex-col items-center pb-0">
             {/* Gallery Section */}
-            <div className="w-full max-w-7xl mx-auto px-4">
+            <div className="w-full max-w-7xl mx-auto px-4 md:space-y-22 ">
                 {/* Gallery Header */}
                 <div className="flex flex-col items-center justify-center py-12">
                     <h2 className="text-[#DF6853] text-[24px] mb-2">OUR GALLERY</h2>
@@ -17,7 +17,7 @@ export default function BodyBottom() {
                 </div>
 
               
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-0">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-0 ">
                     {/* Food Item 1 */}
                     <div className="relative w-full overflow-hidden group md:h-[461px]">
                         <Image 
