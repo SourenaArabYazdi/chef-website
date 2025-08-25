@@ -27,7 +27,7 @@ export default function HeaderPage(){
                  </span>
                  <span className="text-[#FFFFFF] ml-3 text-[24px] ">
                      <Link href={'/Website'} className=""> 
-                        Chef's <br className="md:hidden" />
+                        Chef&apos;s <br className="md:hidden" />
                          Kitchen
                        </Link>
                  </span>
@@ -56,7 +56,7 @@ export default function HeaderPage(){
                                </span>
                                <span className="text-[#FFFFFF] ml-3 text-[24px] font-bold  ">
                                    
-                                      Chef's <br className="md:hidden" />
+                                      Chef&apos;s <br className="md:hidden" />
                                        Kitchen
                                     
                                </span>
@@ -121,7 +121,7 @@ export default function HeaderPage(){
                                </span>
                                <span className="text-[#FFFFFF] ml-3 text-[24px] font-bold  ">
                                    
-                                      Chef's <br className="md:hidden" />
+                                      Chef&apos;s <br className="md:hidden" />
                                        Kitchen
                                     
                                </span>
@@ -197,7 +197,7 @@ export default function HeaderPage(){
                                          </span>
                                          <span className="text-[#FFFFFF] ml-3 text-[24px] ">
                                              <Link href={'/Website'}> 
-                                                Chef's 
+                                                Chef&apos;s 
                                                  Kitchen
                                                </Link>
                                          </span>

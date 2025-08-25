@@ -13,7 +13,7 @@ export default function BodyMid3Component(){
 
             <div className="flex flex-col items-center mt-19 space-y-3">
                  <h1 className="text-[#DF6853] text-3xl ">EXPERCT CHEFS</h1>
-                 <h2 className="text-[30px] font-bold">Let's meet the expert</h2>
+                 <h2 className="text-[30px] font-bold">Let&apos;s meet the expert</h2>
 
              
                  < ChefSlide />

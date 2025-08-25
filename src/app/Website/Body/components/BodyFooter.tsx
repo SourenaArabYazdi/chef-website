@@ -16,9 +16,9 @@ export default function BodyFooter() {
                             src={"/Images/logo/Logo.svg"} 
                             height={56} 
                             width={56} 
-                            alt="Chef's Kitchen logo" 
+                            alt="Chef&apos;s Kitchen logo" 
                         />
-                        <h1 className="text-2xl font-bold">Chef's Kitchen</h1>
+                        <h1 className="text-2xl font-bold">Chef&apos;s Kitchen</h1>
                     </div>
                     
                     <div className="flex flex-col space-y-4">
@@ -161,7 +161,7 @@ export default function BodyFooter() {
 
                 {/* Copyright */}
                 <p className="text-xs text-gray-400 text-center">
-                    ©2025 - Chef's kitchen. Distributed By ThemeWagon and Developed by GetNextjsTemplates & SourenaArabYazdi
+                    ©2025 - Chef&apos;s kitchen. Distributed By ThemeWagon and Developed by GetNextjsTemplates & SourenaArabYazdi
                 </p>
             </div>
         </footer>
