@@ -10,7 +10,7 @@ export const ChefSlide = () => {
 
 
     return(
-       <div className='w-[470px] mt-14 flex items-center justify-center sm:w-[570px] md:w-[670px] lg:w-[800px] '>
+       <div className='w-[470px] mt-14 flex items-center justify-center sm:w-[570px] md:w-[670px] lg:w-[800px] 2xl:w-[900px] '>
           <Swiper
           loop = {true}
         spaceBetween={50}

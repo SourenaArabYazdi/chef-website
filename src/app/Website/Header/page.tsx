@@ -30,6 +30,13 @@ export default function HeaderPage(){
                  </span>
             </div>
 
+            <nav className="hidden lg:flex items-center space-x-8 text-[#FFFFFF] text-lg lg:space-x-10 xl:space-x-15 2xl:space-x-20">
+                <Link href={'#'}>Home</Link>
+                <Link href={'#'}>About Us</Link>
+                <Link href={'#'}>Recepie</Link>
+                <Link href={'#'}>Gallery</Link>
+            </nav>
+
             <div className="flex items-center justify-between">
                   
                      <span className="w-[171px] h-[58px] flex flex-row  items-center justify-between text-[#FFFFFF] text-xl mr-8 "> 
@@ -38,7 +45,7 @@ export default function HeaderPage(){
                      </span>
 
                 
-                  <div className="">
+                  <div className="lg:hidden">
                       
                         <Sheet >
                              <SheetTrigger className="w-[40px] h-[34px]"> <IoIosMore  className="text-white mr-2 cursor-pointer" size={34} /> </SheetTrigger>
