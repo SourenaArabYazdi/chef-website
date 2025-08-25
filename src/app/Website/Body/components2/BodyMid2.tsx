@@ -8,11 +8,11 @@ export default function BodyMid2Component(){
 
 
     return(
-        <div className="h-[1122.41px] bg-[#000000] text-[#FFFFFF] mt-90 sm:mt-0 felx items-center justify-center sm:h-[1307.94px] sm:space-y-7 ">
+        <div className="h-[1122.41px] bg-[#000000] text-[#FFFFFF] mt-90 sm:mt-0 felx items-center justify-center sm:h-[1307.94px] sm:space-y-7 lg:h-[850.641px] lg:flex lg:flex-row ">
 
-            <Image src={'/cook.png'}  width={816} height={916} alt="Cook"/>
+            <Image src={'/cook.png'}  width={816} height={916} alt="Cook" className="lg:w-[900px]"/>
 
-            <div className="flex p-4 min-h-[490px]  flex-col space-y-4">
+            <div className="flex p-4 min-h-[490px]  flex-col space-y-4 lg:max-w-[500px]">
                  <h1 className="text-[#DF6853] text-[18px]">COOK WITH US</h1>
                  <h2 className="text-[30px]">Cooking together with the expert.</h2>
                  <p className="text-gray-400 " >Sed ut perspiciatis unde omnis iste natus error sit volupta

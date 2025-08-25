@@ -49,7 +49,7 @@ export const Items  : ItemsProps[]= [
 
 export const ItemComponent = () => {
     return (
-        <div className="min-h-[485px]  bg-[#000000]  flex flex-col justify-center items-center gap-12 p-2 sm:grid sm:grid-cols-2 sm:grid-rows-2 ">
+        <div className="min-h-[485px]  bg-[#000000]  flex flex-col justify-center  items-center gap-12 p-2 sm:grid sm:grid-cols-2 sm:grid-rows-2 lg:flex lg:flex-row lg:items-center lg:justify-center ">
             {Items.map((item) => (
                 <div key={item.id} className="flex flex-col  items-center text-center p-15">
                     
@@ -60,15 +60,15 @@ export const ItemComponent = () => {
                             width={260} 
                             height={260} 
                            
-                            className="w-full h-full   object-cover " 
+                            className="w-full h-full   object-cover  " 
                             alt={item.title}
                         />
                     
 
                     {/* Text Content */}
-                    <div className="flex items-center justify-center flex-col">
-                      <h1 className="text-white text-xl font-bold mb-2">{item.title}</h1>
-                      <p className="text-gray-300 w-3/4 mb-4">{item.desc}</p>
+                    <div className="flex items-center justify-center flex-col lg:text-xl">
+                      <h1 className="text-white text-xl font-bold mb-2 ">{item.title}</h1>
+                      <p className="text-gray-300 w-3/4 mb-4 lg:w-[130px]">{item.desc}</p>
                       <h2 className="text-[#DF6853] hover:underline">
                           <Link href={'#'}>Learn More</Link>
                       </h2>
