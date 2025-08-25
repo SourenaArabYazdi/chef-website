@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function BodyBottom() {
     return (
-        <div className="bg-[#000000] text-[#FFFFFF] flex flex-col items-center pb-0">
+        <div id="gallery" className="bg-[#000000] text-[#FFFFFF] flex flex-col items-center pb-0 lg:scroll-mt-[144px] scroll-mt-24">
             {/* Gallery Section */}
             <div className="w-full max-w-7xl mx-auto px-4 md:space-y-22 ">
                 {/* Gallery Header */}

@@ -7,7 +7,7 @@ export default function MainPage(){
 
 
     return(
-        <div>
+        <div className="scroll-smooth">
              <HeaderPage />
              <BodyPage />
         </div>

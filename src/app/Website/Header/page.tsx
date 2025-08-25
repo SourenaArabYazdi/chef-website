@@ -4,8 +4,6 @@ import { FaPhoneAlt } from "react-icons/fa";
 import {
     Sheet,
     SheetContent,
-    SheetDescription,
-    SheetFooter,
     SheetHeader,
     SheetTitle,
     SheetTrigger,
@@ -17,7 +15,7 @@ export default function HeaderPage(){
 
 
     return(
-        <div className=" h-[144px] bg-[#374151] flex  items-center justify-between lg:sticky lg:top-0 z-50 w-full">
+        <div className=" h-[144px] bg-[#374151] flex  items-center justify-between lg:sticky lg:top-0 lg:z-50">
             <div className="w-[225.625px] h-[64px]  flex flex-row items-center justify-beetwen ">
                  <span>
                      <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
@@ -31,10 +29,10 @@ export default function HeaderPage(){
             </div>
 
             <nav className="hidden lg:flex items-center space-x-8 text-[#FFFFFF] text-lg lg:space-x-10 xl:space-x-15 2xl:space-x-20">
-                <Link href={'#'}>Home</Link>
-                <Link href={'#'}>About Us</Link>
-                <Link href={'#'}>Recepie</Link>
-                <Link href={'#'}>Gallery</Link>
+                <Link href={'#home'}>Home</Link>
+                <Link href={'#about'}>About Us</Link>
+                <Link href={'#recipe'}>Recepie</Link>
+                <Link href={'#gallery'}>Gallery</Link>
             </nav>
 
             <div className="flex items-center justify-between">
@@ -42,6 +40,11 @@ export default function HeaderPage(){
                      <span className="w-[171px] h-[58px] flex flex-row  items-center justify-between text-[#FFFFFF] text-xl mr-8 "> 
                         <FaPhoneAlt className="w-auto h-[30px] text-[#DF6853] mb-6 " />
                           <span className="ml-2 "> +1(909) 235-9814 </span>
+                     </span>
+
+
+                     <span>
+                        
                      </span>
 
                 
@@ -66,25 +69,25 @@ export default function HeaderPage(){
                                  </SheetHeader>
 
                                  <div className="text-white ml-3 text-xl">
-                                   <Link href={'#'}>
+                                   <Link href={'#home'}>
                                      Home
                                     </Link>
                                  </div>
 
                                  <div className="text-white ml-3 text-xl">
-                                   <Link href={'#'}>
+                                   <Link href={'#about'}>
                                      About Us
                                     </Link>
                                  </div>
 
                                  <div className="text-white ml-3 text-xl">
-                                   <Link href={'#'}>
+                                   <Link href={'#recipe'}>
                                      Recepie
                                     </Link>
                                  </div>
 
                                   <div className="text-white ml-3 text-xl">
-                                   <Link href={'#'}>
+                                   <Link href={'#gallery'}>
                                      Gallery
                                     </Link>
                                  </div>

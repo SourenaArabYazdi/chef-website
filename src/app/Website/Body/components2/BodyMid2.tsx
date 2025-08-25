@@ -8,7 +8,7 @@ export default function BodyMid2Component(){
 
 
     return(
-        <div className="h-[1122.41px] bg-[#000000] text-[#FFFFFF] mt-90 sm:mt-0 felx items-center justify-center sm:h-[1307.94px] sm:space-y-7 lg:h-[950.641px] lg:flex lg:flex-row ">
+        <div id="recipe" className="h-[1122.41px] bg-[#000000] text-[#FFFFFF] mt-90 sm:mt-0 felx items-center justify-center sm:h-[1307.94px] sm:space-y-7 lg:h-[950.641px] lg:flex lg:flex-row lg:scroll-mt-[144px] scroll-mt-24 ">
 
             <Image src={'/cook.png'}  width={816} height={916} alt="Cook" className="lg:min-w-[600px]"/>
 
@@ -24,7 +24,7 @@ export default function BodyMid2Component(){
                          Sed ut perspiciatis unde omnis iste natus error sit 
                          voluptatem accusantium doloremque laudantium....</p>
 
-                         <Button className="bg-[#DF6853] text-white min-h-[70px] rounded-full text-[20px] sm:mt-4  w-[40%] mt-3 ">Learn more</Button>
+                        <Button className="bg-[#DF6853] text-white min-h-[70px] rounded-full text-[20px] sm:mt-4  w-[40%] mt-3 ">Learn more</Button>
             </div>
 
 

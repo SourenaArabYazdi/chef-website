@@ -6,7 +6,7 @@ export default function BodyTopComponent(){
 
 
     return(
-        <div className="h-[989.516px] bg-[#374151] text-[#FFFFFF]  space-y-14 lg:flex lg:h-[736.391px] lg:items-center lg:justify-center ">
+        <div id="home" className="h-[989.516px] bg-[#374151] text-[#FFFFFF]  space-y-14 lg:flex lg:h-[736.391px] lg:items-center lg:justify-center lg:scroll-mt-[144px] scroll-mt-24 ">
              
              <div className="lg:h-[416px] lg:min-w-[536px]  lg:mt-20 lg:space-y-3">
                  <div className=" p-2 space-y-4   ">
