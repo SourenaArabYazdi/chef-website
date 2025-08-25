@@ -70,7 +70,7 @@ export const ItemComponent = () => {
                       <h1 className="text-white text-xl font-bold mb-2 ">{item.title}</h1>
                       <p className="text-gray-300 w-3/4 mb-4 lg:w-[130px]">{item.desc}</p>
                       <h2 className="text-[#DF6853] hover:underline">
-                          <Link href={'#'}>Learn More</Link>
+                          <Link href={&apos;#'}>Learn More</Link>
                       </h2>
                     </div>
                 </div>

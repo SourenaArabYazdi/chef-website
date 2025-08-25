@@ -23,10 +23,10 @@ export default function HeaderPage(){
         <div className=" h-[144px] bg-[#374151] flex  items-center justify-between lg:sticky lg:top-0 lg:z-50">
             <div className="w-[225.625px] h-[64px]  flex flex-row items-center justify-beetwen ">
                  <span>
-                     <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
+                     <Image src={&apos;/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
                  </span>
                  <span className="text-[#FFFFFF] ml-3 text-[24px] ">
-                     <Link href={'/Website'} className=""> 
+                     <Link href={&apos;/Website'} className=""> 
                         Chef's <br className="md:hidden" />
                          Kitchen
                        </Link>
@@ -34,10 +34,10 @@ export default function HeaderPage(){
             </div>
 
             <nav className="hidden lg:flex items-center space-x-8 text-[#FFFFFF] text-lg lg:space-x-10 xl:space-x-15 2xl:space-x-20">
-                <Link href={'#home'}>Home</Link>
-                <Link href={'#about'}>About Us</Link>
-                <Link href={'#recipe'}>Recepie</Link>
-                <Link href={'#gallery'}>Gallery</Link>
+                <Link href={&apos;#home'}>Home</Link>
+                <Link href={&apos;#about'}>About Us</Link>
+                <Link href={&apos;#recipe'}>Recepie</Link>
+                <Link href={&apos;#gallery'}>Gallery</Link>
             </nav>
 
             <div className="flex items-center justify-between">
@@ -52,7 +52,7 @@ export default function HeaderPage(){
                             <Card className="bg-[#374151] border-none flex flex-col items-center w-full text-[#FFFFFF] ">
                                 <CardHeader className="w-full items-center flex flex-row ml-40 ">
                                 <span>
-                                   <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
+                                   <Image src={&apos;/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
                                </span>
                                <span className="text-[#FFFFFF] ml-3 text-[24px] font-bold  ">
                                    
@@ -117,7 +117,7 @@ export default function HeaderPage(){
                             <Card className="bg-[#374151] border-none flex flex-col items-center w-full text-[#FFFFFF] ">
                                 <CardHeader className="w-full items-center flex flex-row ml-40 ">
                                 <span>
-                                   <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
+                                   <Image src={&apos;/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
                                </span>
                                <span className="text-[#FFFFFF] ml-3 text-[24px] font-bold  ">
                                    
@@ -193,10 +193,10 @@ export default function HeaderPage(){
                                  <SheetHeader className="flex flex-row items-center mb-4 ">
                                      <SheetTitle className="flex space-x-4 items-center ">
                                      <span>
-                                             <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className=""/>
+                                             <Image src={&apos;/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className=""/>
                                          </span>
                                          <span className="text-[#FFFFFF] ml-3 text-[24px] ">
-                                             <Link href={'/Website'}> 
+                                             <Link href={&apos;/Website'}> 
                                                 Chef's 
                                                  Kitchen
                                                </Link>
@@ -205,25 +205,25 @@ export default function HeaderPage(){
                                  </SheetHeader>
 
                                  <div className="text-white ml-3 text-xl">
-                                   <Link href={'#home'}>
+                                   <Link href={&apos;#home'}>
                                      Home
                                     </Link>
                                  </div>
 
                                  <div className="text-white ml-3 text-xl">
-                                   <Link href={'#about'}>
+                                   <Link href={&apos;#about'}>
                                      About Us
                                     </Link>
                                  </div>
 
                                  <div className="text-white ml-3 text-xl">
-                                   <Link href={'#recipe'}>
+                                   <Link href={&apos;#recipe'}>
                                      Recepie
                                     </Link>
                                  </div>
 
                                   <div className="text-white ml-3 text-xl">
-                                   <Link href={'#gallery'}>
+                                   <Link href={&apos;#gallery'}>
                                      Gallery
                                     </Link>
                                  </div>

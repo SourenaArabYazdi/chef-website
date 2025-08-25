@@ -10,7 +10,7 @@ export const ChefSlide = () => {
 
 
     return(
-       <div className='w-[470px] mt-14 flex items-center justify-center sm:w-[570px] md:w-[670px] lg:w-[800px] 2xl:w-[900px] '>
+       <div className='w-[470px] mt-14 flex items-center justify-center sm:w-[570px] md:w-[670px] lg:w-[800px] 2xl:w-[900px] &apos;>
           <Swiper
           loop = {true}
         spaceBetween={50}
@@ -19,20 +19,20 @@ export const ChefSlide = () => {
         onSwiper={(swiper) => console.log(swiper)} className='object-cover'
         
         >
-               <SwiperSlide  className='w-[219px] h-[415px] '>
+               <SwiperSlide  className='w-[219px] h-[415px] &apos;>
 
                   <Image src={"/Expert/boyone.svg"}  width={396} height={396} alt='1'/>
                   <h1 className='text-2xl font-bold'>Shoo Thar Mien</h1>
                   <h2 className='text-gray-400'>Junior Chef</h2>
                </SwiperSlide>
-               <SwiperSlide  className='w-[219px] h-[415px] '>
+               <SwiperSlide  className='w-[219px] h-[415px] &apos;>
 
               <Image src={"/Expert/boytwo.svg"}  width={396} height={396} alt='1'/>
               <h1 className='text-2xl font-bold'>Shoo Thar Mien</h1>
               <h2 className='text-gray-400'>Senior Chef</h2>
               </SwiperSlide>
 
-              <SwiperSlide  className='w-[219px] h-[415px] '>
+              <SwiperSlide  className='w-[219px] h-[415px] &apos;>
 
                  <Image src={"/Expert/girl.png"}  width={396} height={396} alt='1'/>
                  <h1 className='text-2xl font-bold'>Shoo Thar Mien</h1>

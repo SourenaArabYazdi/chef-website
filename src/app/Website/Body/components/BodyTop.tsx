@@ -24,7 +24,7 @@ export default function BodyTopComponent(){
 
 
              <div>
-                 <Image src={'/images/logo/banner-image.png'} width={758} height={702} alt="banner" className="lg:w-[1000px] " />
+                 <Image src={&apos;/images/logo/banner-image.png'} width={758} height={702} alt="banner" className="lg:w-[1000px] " />
              </div>
         </div>
     )
