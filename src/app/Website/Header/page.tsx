@@ -17,7 +17,7 @@ export default function HeaderPage(){
 
 
     return(
-        <div className=" h-[144px] bg-[#374151] flex  items-center justify-between">
+        <div className=" h-[144px] bg-[#374151] flex  items-center justify-between lg:sticky lg:top-0 z-50 w-full">
             <div className="w-[225.625px] h-[64px]  flex flex-row items-center justify-beetwen ">
                  <span>
                      <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
