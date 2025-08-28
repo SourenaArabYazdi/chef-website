@@ -238,10 +238,10 @@ export default function HeaderPage(){
                                             Sign In
                                          </DialogTrigger>
 
-                                         <DialogContent className="bg-[#374151] w-[400px] border-none overflow-hidden  ">
+                                         <DialogContent className="bg-[#374151] w-[400px]  border-none overflow-hidden  ">
                                            <DialogTitle></DialogTitle>
-                                             <Card className="bg-[#374151] border-none flex flex-col items-center w-[500px] object-cover  text-[#FFFFFF]  ">
-                                                 <CardHeader className="w-full items-center flex flex-row ml-28 ">
+                                             <Card className="bg-[#374151] border-none flex flex-col items-center w-[500px]  object-cover  text-[#FFFFFF]  ">
+                                                 <CardHeader className="w-full items-center flex flex-row ml-13 ">
                                                  <span>
                                                     <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
                                                 </span>
@@ -254,7 +254,7 @@ export default function HeaderPage(){
                                                  </CardHeader>
 
 
-                                                 <CardContent className="flex flex-col items-center justify-center space-y-3 w-[500px] mr-35 ">
+                                                 <CardContent className="flex flex-col items-center justify-center space-y-3 w-[500px] mr-50 ">
                                                      
                                                      <div className="space-x-4">
                                                         <Button className="bg-[#DF6853] text-[#FFFFFF]  text-[16px] p-3 w-[134px] h-[52px] rounded-xl">
@@ -289,7 +289,7 @@ export default function HeaderPage(){
                                                       </div>
                                                  </CardContent>
 
-                                                 <CardFooter className="flex flex-col items-center justify-center space-y-2 text-sm mr-32">
+                                                 <CardFooter className="flex flex-col items-center justify-center space-y-2 text-sm mr-45">
                                                    <span >Forgot Password ? </span>
                                                    <span>Not a member yet ? <span className="text-[#DF6853] cursor-pointer">Sign Up</span></span>
                                                      
@@ -308,7 +308,7 @@ export default function HeaderPage(){
                                          <DialogContent className="bg-[#374151] border-none w-[400px] overflow-hidden  ">
                                            <DialogTitle></DialogTitle>
                                              <Card className="bg-[#374151] border-none flex flex-col items-center w-[500px] object-cover  text-[#FFFFFF]  ">
-                                                 <CardHeader className="w-full items-center flex flex-row ml-28 ">
+                                                 <CardHeader className="w-full items-center flex flex-row ml-15 ">
                                                  <span>
                                                     <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
                                                 </span>
@@ -321,7 +321,7 @@ export default function HeaderPage(){
                                                  </CardHeader>
 
 
-                                                 <CardContent className="flex flex-col items-center justify-center space-y-3 w-[500px] mr-35 ">
+                                                 <CardContent className="flex flex-col items-center justify-center space-y-3 w-[500px] mr-50 ">
                                                      
                                                      <div className="space-x-4">
                                                         <Button className="bg-[#DF6853] text-[#FFFFFF]  text-[16px] p-3 w-[134px] h-[52px] rounded-xl">
@@ -356,7 +356,7 @@ export default function HeaderPage(){
                                                       </div>
                                                  </CardContent>
 
-                                                 <CardFooter className="flex flex-col items-center justify-center space-y-2 text-sm mr-32">
+                                                 <CardFooter className="flex flex-col items-center justify-center space-y-2 text-sm mr-45">
                                                  
                                                          <span className="w-[290px]" >By creating an account you are  agree with our <br /> <span className="text-[#DF6853]">Privacy and Policy</span> </span>
                                                          <span>Already have an account?  <span className="text-[#DF6853] cursor-pointer">Sign In</span></span>
