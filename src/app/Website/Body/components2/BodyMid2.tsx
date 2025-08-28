@@ -8,9 +8,9 @@ export default function BodyMid2Component(){
 
 
     return(
-        <div id="recipe" className="h-[1122.41px] bg-[#000000] text-[#FFFFFF] mt-159 sm:mt-0 md:mt-0 lg:mt-0 felx items-center justify-center sm:h-[1307.94px] sm:space-y-7 lg:h-[950.641px] lg:flex lg:flex-row lg:scroll-mt-[144px] scroll-mt-24 ">
+        <div id="recipe" className="h-[1122.41px] bg-[#000000] text-[#FFFFFF] mt-159 sm:mt-0 md:mt-0 lg:mt-0 flex items-center justify-center sm:h-[1307.94px] sm:space-y-7 lg:h-[950.641px] lg:flex lg:flex-row lg:scroll-mt-[144px] scroll-mt-24 overflow-x-hidden">
 
-            <Image src={'/cook.png'}  width={816} height={916} alt="Cook" className="lg:min-w-[600px]"/>
+            <Image src={'/cook.png'}  width={816} height={916} alt="Cook" className="max-w-full h-auto lg:min-w-[600px]"/>
 
             <div className="flex p-4 min-h-[490px]  flex-col space-y-4 lg:max-w-[500px]">
                  <h1 className="text-[#DF6853] text-[18px]">COOK WITH US</h1>

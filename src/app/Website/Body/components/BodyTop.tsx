@@ -6,7 +6,7 @@ export default function BodyTopComponent(){
 
 
     return(
-        <div id="home" className="h-[989.516px] bg-[#374151] text-[#FFFFFF]  space-y-14 lg:flex lg:h-[736.391px] lg:items-center lg:justify-center lg:scroll-mt-[144px] scroll-mt-24 ">
+        <div id="home" className="h-[989.516px] bg-[#374151] text-[#FFFFFF]  space-y-14 lg:flex lg:h-[736.391px] lg:items-center lg:justify-center lg:scroll-mt-[144px] scroll-mt-24 overflow-x-hidden">
              
              <div className="lg:h-[416px] lg:min-w-[536px]  lg:mt-20 lg:space-y-3">
                  <div className=" p-2 space-y-4   ">
@@ -17,14 +17,14 @@ export default function BodyTopComponent(){
 
 
                  <div className="ml-3 space-y-5 md:flex md:flex-row md:justify-center md:space-x-3  ">
-                      <Button className="bg-[#DF6853] text-white min-h-[70px] rounded-full text-[20px] p-7">Lets Cook</Button> <br />
+                      <Button className="bg-[#DF6853] text.white min-h-[70px] rounded-full text-[20px] p-7">Lets Cook</Button> <br />
                       <Button className="bg-[#374151] border border-[#DF6853] text-[#DF6853] w-full md:w-[30%] min-h-[70px] text-[20px] rounded-full mt-2 md:mt-0"> Explore now </Button>
                  </div>
              </div>
 
 
              <div>
-                 <Image src={'/Images/logo/banner-image.png'} width={758} height={702} alt="banner" className="lg:w-[1000px] " />
+                <Image src={'/Images/logo/banner-image.png'} width={758} height={702} alt="banner" className="w-full h-auto lg:w-[1000px] " />
              </div>
         </div>
     )
