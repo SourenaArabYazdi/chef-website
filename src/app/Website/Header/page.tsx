@@ -48,7 +48,7 @@ export default function HeaderPage(){
                            Sign In
                         </DialogTrigger>
 
-                        <DialogContent className="bg-[#374151]">
+                        <DialogContent className="bg-[#374151] border-none">
                           <DialogTitle></DialogTitle>
                             <Card className="bg-[#374151] border-none flex flex-col items-center w-full text-[#FFFFFF] ">
                                 <CardHeader className="w-full items-center flex flex-row ml-40 ">
@@ -114,7 +114,7 @@ export default function HeaderPage(){
                            Sign Up
                         </DialogTrigger>
 
-                        <DialogContent className="bg-[#374151]">
+                        <DialogContent className="bg-[#374151] border-none">
                           <DialogTitle></DialogTitle>
                             <Card className="bg-[#374151] border-none flex flex-col items-center w-full text-[#FFFFFF] ">
                                 <CardHeader className="w-full items-center flex flex-row ml-40 ">
@@ -238,7 +238,7 @@ export default function HeaderPage(){
                                             Sign In
                                          </DialogTrigger>
 
-                                         <DialogContent className="bg-[#374151] w-[400px] overflow-hidden  ">
+                                         <DialogContent className="bg-[#374151] w-[400px] border-none overflow-hidden  ">
                                            <DialogTitle></DialogTitle>
                                              <Card className="bg-[#374151] border-none flex flex-col items-center w-[500px] object-cover  text-[#FFFFFF]  ">
                                                  <CardHeader className="w-full items-center flex flex-row ml-28 ">
@@ -305,7 +305,7 @@ export default function HeaderPage(){
                                             Sign Up
                                          </DialogTrigger>
 
-                                         <DialogContent className="bg-[#374151] w-[400px] overflow-hidden  ">
+                                         <DialogContent className="bg-[#374151] border-none w-[400px] overflow-hidden  ">
                                            <DialogTitle></DialogTitle>
                                              <Card className="bg-[#374151] border-none flex flex-col items-center w-[500px] object-cover  text-[#FFFFFF]  ">
                                                  <CardHeader className="w-full items-center flex flex-row ml-28 ">
