@@ -38,3 +38,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 ##  یک سایت آشپزی که تمرکز بر روی زیبایی آن بوده و رسپانسیو هست 
+##  لینک لایو پروژه
+
+##  https://chef-website-git-main-sourenas-projects.vercel.app?_vercel_share=ha4Z5JwtL5kqbuBMYFOtoDl9QDWmrteW
