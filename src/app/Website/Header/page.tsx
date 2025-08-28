@@ -11,7 +11,7 @@ import {
   import { IoIosMore } from "react-icons/io";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { DialogTrigger } from "@radix-ui/react-dialog";
+import { DialogTitle, DialogTrigger } from "@radix-ui/react-dialog";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { FaGoogle } from "react-icons/fa";
 import { Input } from "@/components/ui/input";
@@ -49,6 +49,7 @@ export default function HeaderPage(){
                         </DialogTrigger>
 
                         <DialogContent className="bg-[#374151]">
+                          <DialogTitle></DialogTitle>
                             <Card className="bg-[#374151] border-none flex flex-col items-center w-full text-[#FFFFFF] ">
                                 <CardHeader className="w-full items-center flex flex-row ml-40 ">
                                 <span>
@@ -114,6 +115,7 @@ export default function HeaderPage(){
                         </DialogTrigger>
 
                         <DialogContent className="bg-[#374151]">
+                          <DialogTitle></DialogTitle>
                             <Card className="bg-[#374151] border-none flex flex-col items-center w-full text-[#FFFFFF] ">
                                 <CardHeader className="w-full items-center flex flex-row ml-40 ">
                                 <span>
@@ -229,14 +231,138 @@ export default function HeaderPage(){
                                  </div>
 
 
-                                  <div className="flex flex-col  space-y-4 p-2 ">
-                                      <Button className="bg-[#374151] border border-[#DF6853] text-[#DF6853]">
-                                         Sign In
-                                      </Button>
+                                  <div className="flex flex-row space-x-2  space-y-4 p-2 ">
+                                       <Dialog >
+                                         <DialogTrigger className="border w-[100px] h-[50px] bg-[#374151] border-[#DF6853] hover:bg-[#DF6853] text-[#FFFFFF] rounded-full ">
+                                            Sign In
+                                         </DialogTrigger>
 
-                                      <Button className="bg-[#DF6853] text-white">
-                                         Sign Up
-                                      </Button>
+                                         <DialogContent className="bg-[#374151]">
+                                           <DialogTitle></DialogTitle>
+                                             <Card className="bg-[#374151] border-none flex flex-col items-center w-full text-[#FFFFFF] ">
+                                                 <CardHeader className="w-full items-center flex flex-row ml-40 ">
+                                                 <span>
+                                                    <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
+                                                </span>
+                                                <span className="text-[#FFFFFF] ml-3 text-[24px] font-bold  ">
+                                                    
+                                                       Chef&apos;s <br className="md:hidden" />
+                                                        Kitchen
+                                                     
+                                                </span>
+                                                 </CardHeader>
+
+
+                                                 <CardContent className="flex flex-col items-center justify-center space-y-3 w-full ">
+                                                     
+                                                     <div className="space-x-4">
+                                                        <Button className="bg-[#DF6853] text-[#FFFFFF]  text-[16px] p-3 w-[184px] h-[52px] rounded-xl">
+                                                          Sign In
+                                                          <FaGoogle className="text-xl"  />
+                                                            
+                                                         </Button>
+
+                                                         <Button className="bg-[#DF6853] text-[#FFFFFF]  text-[16px] p-3 w-[184px] h-[52px] rounded-xl">
+                                                          Sign In
+                                                          <FaGithub className="text-xl"  />
+                                                            
+                                                         </Button>
+                                                     </div>
+
+                                                      <span className="mt-10">OR</span>
+
+                                                      <div className="space-y-5">
+                                                          <div>
+                                                              <Input placeholder="Email" className="w-[400px] h-[50px]"/>
+                                                          </div>
+
+                                                          <div>
+                                                              <Input placeholder="Password" className="w-[400px] h-[50px]"/>
+                                                          </div>
+
+                                                          <div>
+                                                            <Button className="bg-[#DF6853] w-full h-[45px]" >
+                                                              Sign In
+                                                            </Button>
+                                                          </div>
+                                                      </div>
+                                                 </CardContent>
+
+                                                 <CardFooter className="flex flex-col items-center justify-center space-y-2 text-sm">
+                                                   <span >Forgot Password ? </span>
+                                                   <span>Not a member yet ? <span className="text-[#DF6853] cursor-pointer">Sign Up</span></span>
+                                                     
+                                                 </CardFooter>
+                                             </Card>
+                                         </DialogContent>
+                                          
+                                       </Dialog>
+
+                                       <Dialog >
+                                        <DialogTrigger className=" w-[100px] h-[50px] bg-[#DF6853]  hover:bg-[#374151] text-[#FFFFFF] hover:border hover:border-[#FFFFFF] rounded-full ">
+                                           Sign Up
+                                        </DialogTrigger>
+
+                                        <DialogContent className="bg-[#374151]">
+                                            <Card className="bg-[#374151] border-none flex flex-col items-center w-full text-[#FFFFFF] ">
+                                                <CardHeader className="w-full items-center flex flex-row ml-40 ">
+                                                <span>
+                                                   <Image src={'/Images/logo/Logo.svg'} width={56} height={56} alt="logo"  className="w-[56px] h-[56px]"/>
+                                               </span>
+                                               <span className="text-[#FFFFFF] ml-3 text-[24px] font-bold  ">
+                                                   
+                                                      Chef&apos;s <br className="md:hidden" />
+                                                       Kitchen
+                                                    
+                                               </span>
+                                                </CardHeader>
+
+
+                                                <CardContent className="flex flex-col items-center justify-center space-y-3 w-full ">
+                                                  <DialogTitle></DialogTitle>
+                                                    
+                                                    <div className="space-x-4">
+                                                       <Button className="bg-[#DF6853] text-[#FFFFFF]  text-[16px] p-3 w-[184px] h-[52px] rounded-xl">
+                                                         Sign Up
+                                                         <FaGoogle className="text-xl"  />
+                                                           
+                                                        </Button>
+
+                                                        <Button className="bg-[#DF6853] text-[#FFFFFF]  text-[16px] p-3 w-[184px] h-[52px] rounded-xl">
+                                                         Sign Up
+                                                         <FaGithub className="text-xl"  />
+                                                           
+                                                        </Button>
+                                                    </div>
+
+                                                     <span className="mt-10">OR</span>
+
+                                                     <div className="space-y-5">
+                                                         <div>
+                                                             <Input placeholder="Email" className="w-[400px] h-[50px]"/>
+                                                         </div>
+
+                                                         <div>
+                                                             <Input placeholder="Password" className="w-[400px] h-[50px]"/>
+                                                         </div>
+
+                                                         <div>
+                                                           <Button className="bg-[#DF6853] w-full h-[45px]" >
+                                                             Sign Up
+                                                           </Button>
+                                                         </div>
+                                                     </div>
+                                                </CardContent>
+
+                                                <CardFooter className="flex flex-col items-center justify-center space-y-2 text-sm">
+                                                  <span >By creating an account you are  agree with our <br /> <span className="text-[#DF6853]">Privacy and Policy</span> </span>
+                                                  <span>Already have an account?  <span className="text-[#DF6853] cursor-pointer">Sign In</span></span>
+                                                    
+                                                </CardFooter>
+                                            </Card>
+                                        </DialogContent>
+                                         
+                                      </Dialog>
 
                                   </div>
                              </SheetContent>
